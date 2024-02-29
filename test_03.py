@@ -78,3 +78,5 @@ elif human == 2 and computer == game[2]:
     print(game[2])
     print(f"Computer chose:\n{game[2]}")
     print("It's a draw!")
+else:
+    print("You typed an invalid number! Game Over!")

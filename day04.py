@@ -15,7 +15,7 @@ import random
 
 # ---- Coding Challenge 1 --------------------------------
 # HEADS or TAILS coin toss
-# first letter should be capitalised and spelt exactly (Heads not heads)
+# first letter should be capitalized and spelt exactly (Heads not heads)
 # Generate a random number either 0 or 1.
 # Use that number to print out Heads or Tails. (1 means Heads, 0 means Tails)
 
@@ -72,17 +72,32 @@ import random
 # dirty_dozen example
 # dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears", "Tomatoes", "Celery", "Potatoes"]
 
-fruits = [
-    "Strawberries",
-    "Nectarines",
-    "Apples",
-    "Grapes",
-    "Peaches",
-    "Cherries",
-    "Pears",
-]
-vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+# fruits = [
+#     "Strawberries",
+#     "Nectarines",
+#     "Apples",
+#     "Grapes",
+#     "Peaches",
+#     "Cherries",
+#     "Pears",
+# ]
+# vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
 
-dirty_dozen = [fruits, vegetables]
+# dirty_dozen = [fruits, vegetables]
 
-print(dirty_dozen)
+# print(dirty_dozen)
+
+# --- Coding Challenge 03 ----------------------------------------------------------------
+row1 = ["⬜", "⬜", "⬜"]
+row2 = ["⬜", "⬜", "⬜"]
+row3 = ["⬜", "⬜", "⬜"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure?")
+
+horizontal = int(position[0])
+vertical = int(position[1])
+
+map[vertical - 1][horizontal - 1] = "X"
+# selected_row = map[vertical - 1]
+# selected_row[horizontal - 1] = "X"

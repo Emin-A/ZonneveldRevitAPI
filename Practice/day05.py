@@ -46,7 +46,6 @@ average_height = round(
 )  # This was needed for the average function
 print(average_height)
 
-
 # for n in student_heights:
 #     n = sum(student_heights) / student_heights[n - 1]
 # print(n)
